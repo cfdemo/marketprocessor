@@ -34,6 +34,14 @@ class TradeMessageController
         return new JsonResponse($jsonDecodedMessages, Response::HTTP_OK);
     }
 
+    /**
+     * Process the trade message and stores confirmed trade.
+     * Stores captured metrics.
+     * Sends messages to queue
+     * @param Application $app
+     * @param Request $request
+     * @return JsonResponse|Response
+     */
     public function store(Application $app, Request $request)
     {
         // create a new trade message, using POST data
