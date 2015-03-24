@@ -53,10 +53,5 @@ class TradeMessageEntityTest extends WebTestCase {
         );
         $this->tradeMessage->createFromRequest($request);
 
-        //@todo create the Application here and use validator to test
-
-
-
-
     }
 }
