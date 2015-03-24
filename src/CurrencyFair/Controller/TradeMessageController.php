@@ -15,7 +15,7 @@ class TradeMessageController
      * Shows recent trade messages
      * @param Application $app
      * @param Request $request
-     * @return JsonResponse Contains
+     * @return JsonResponse Containing recent confirmed trades
      */
     public function showRecent(Application $app, Request $request)
     {
@@ -35,9 +35,8 @@ class TradeMessageController
     }
 
     /**
-     * Process the trade message and stores confirmed trade.
-     * Stores captured metrics.
-     * Sends messages to queue
+     * Processes the trade message and stores confirmed trade.
+     * Stores captured metrics. Sends messages to queue
      * @param Application $app
      * @param Request $request
      * @return JsonResponse|Response
