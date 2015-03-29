@@ -1,17 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Gareth
- * Date: 18/03/2015
- * Time: 21:13
- */
 
 namespace CurrencyFair\Tests;
 
 use CurrencyFair\Entity\TradeMessage;
 use Symfony\Component\HttpFoundation\Request;
 use Silex\WebTestCase;
-
 
 class TradeMessageEntityTest extends WebTestCase {
 
